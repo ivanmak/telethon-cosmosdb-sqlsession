@@ -192,17 +192,6 @@ class CosmosDBSQLSession(MemorySession):
             session_container.delete_item(item, item['dc_id'])
             break
 
-    # @classmethod
-    # def list_sessions(cls):
-    #     session_container = self.get_session_container()
-    #     sessions = []
-    #     query = 'SELECT * FROM c'
-        
-    #     for item in session_container.query_items(query):
-    #         sessions.append(item)
-        
-    #     return sessions
-
     def process_entities(self, tlo):
         
         if not self.save_entities:
