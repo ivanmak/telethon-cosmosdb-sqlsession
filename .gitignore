@@ -130,6 +130,5 @@ local.settings.json
 .python_packages
 
 # Visual Studio Code
-.vscode
 .vscode/
 .DS_Store 
